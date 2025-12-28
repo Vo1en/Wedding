@@ -1081,9 +1081,9 @@
                                 return (
                                     <div key={photo} className={`carousel-slide ${isActive ? 'active' : ''}`}>
                                         <div className="absolute inset-0 overflow-hidden">
-                                            <img src={BASE_IMAGE_URL + photo} className="w-full h-full object-cover blur-xl opacity-30" />
+                                            <img src={BASE_IMAGE_URL + photo} alt="婚紗照片背景" className="w-full h-full object-cover blur-xl opacity-30" loading="lazy" />
                                         </div>
-                                        <img src={BASE_IMAGE_URL + photo} className={`relative z-10 w-full h-full ${isCover ? 'object-cover' : 'object-contain'}`} />
+                                        <img src={BASE_IMAGE_URL + photo} alt={`黃裕勝與馬璦嵐婚紗照 ${index + 1}`} className={`relative z-10 w-full h-full ${isCover ? 'object-cover' : 'object-contain'}`} loading="lazy" />
                                     </div>
                                 );
                             })}
@@ -1289,6 +1289,23 @@
                                             </button>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 停車指南區塊 */}
+                        <div className="px-5 mb-12 animate-slide-up delay-500">
+                            <div className="bg-white/70 backdrop-blur-xl p-6 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-white">
+                                <div className="text-center mb-4">
+                                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#F5F2EE] text-[#B07D62] mb-3"><i className="fa-solid fa-square-parking"></i></div>
+                                    <p className="text-xl font-bold text-[#333] font-serif-tc">停車指南</p>
+                                </div>
+                                <div className="rounded-lg overflow-hidden mb-4 shadow-md">
+                                    <img src={BASE_IMAGE_URL + "parking.webp"} alt="北投麗禧溫泉酒店停車場入口指南" className="w-full h-auto" loading="lazy" />
+                                </div>
+                                <div className="text-center font-serif-tc text-[#666] text-sm leading-7">
+                                    <p className="font-medium flex items-center justify-center gap-2"><i className="fa-solid fa-circle-info text-[#B07D62]"></i>入口位於飯店後方</p>
+                                    <p className="text-[#999] text-xs mt-1">B4、B5 樓層提供平面停車位</p>
                                 </div>
                             </div>
                         </div>
