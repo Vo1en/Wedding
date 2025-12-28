@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>黃裕勝 & 馬璦嵐 家宴邀請函</title>
+    <meta name="description" content="黃裕勝與馬璦嵐的家宴邀請函 - 2026年3月28日誠摯邀請您共享這份喜悅。地點：北投麗禧溫泉酒店" />
+    <link rel="preload" as="image" href="https://vo1en.github.io/wedding/142.webp" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%239e2b2b' stroke='%234a0e0e' stroke-width='2'/%3E%3Ctext x='50' y='65' font-family='serif' font-size='50' fill='%23d4af37' text-anchor='middle' font-weight='bold'%3EW%3C/text%3E%3C/svg%3E">
+
+    <meta name="theme-color" content="#FDFBF7" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <meta property="og:title" content="黃裕勝 & 馬璦嵐 家宴邀請函" />
+    <meta property="og:description" content="誠摯邀請您與我們共享這份喜悅 2026.03.28" />
+    <meta property="og:image" content="https://vo1en.github.io/wedding/1.webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vo1en.github.io/wedding/" />
+
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="黃裕勝 & 馬璦嵐 家宴邀請函" />
+    <meta name="twitter:description" content="誠摯邀請您與我們共享這份喜悅 2026.03.28" />
+    <meta name="twitter:image" content="https://vo1en.github.io/wedding/1.webp" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Serif+TC:wght@300;500;700&family=Mrs+Saint+Delafield&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
+
+    <style>
+        .font-main {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        .font-serif-tc {
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .font-hand {
+            font-family: 'Mrs Saint Delafield', cursive;
+        }
+
+        :root {
+            --color-bg: #FDFBF7;
+            --gold-main: #C5A059;
+            --envelope-color: #F8F5F0;
+            --envelope-shadow-color: #ECE7DF;
+            --wax-red-light: #9e2b2b;
+            --wax-red-main: #7a1f1f;
+            --wax-red-dark: #4a0e0e;
+
+            /* 動畫參數變數 (響應式控制) */
+            --extract-scale: 1.35;
+            --extract-translate-y: -100px;
+        }
+
+        @media (max-width: 480px) {
+            :root {
+                --extract-scale: 1.1;
+                /* 手機版縮小放大倍率，避免超出螢幕 */
+                --extract-translate-y: -60px;
+                /* 手機版垂直位移減少 */
+            }
+        }
+
+        body {
+            background-color: var(--color-bg);
+            color: #4A4A4A;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 背景紋理 */
+        .bg-texture {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+
+        /* 信封紙張紋理 */
+        .paper-texture-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.3'/%3E%3C/svg%3E");
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        /* --- 動畫定義 --- */
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(0.3deg);
+            }
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.3);
+                /* 放大效果明顯 */
+            }
+        }
+
+        .animate-heartbeat {
+            animation: heartbeat 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+            /* 速度加快，活潑一點 */
+        }
+
+        @keyframes seal-pulse-strong {
+            0% {
+                transform: translateX(-50%) scale(1);
+                filter: drop-shadow(0 2px 4px rgba(122, 31, 31, 0.4));
+            }
+
+            50% {
+                transform: translateX(-50%) scale(1.1);
+                filter: drop-shadow(0 6px 12px rgba(158, 43, 43, 0.6));
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1);
+                filter: drop-shadow(0 2px 4px rgba(122, 31, 31, 0.4));
+            }
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: translateX(-50%) scale(1);
+                opacity: 0.8;
+                border-color: rgba(158, 43, 43, 0.5);
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1.6);
+                opacity: 0;
+                border-color: rgba(158, 43, 43, 0);
+            }
+        }
+
+        .seal-ripple {
+            position: absolute;
+            top: 95px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            border: 2px solid rgba(158, 43, 43, 0.6);
+            animation: ripple 2s infinite cubic-bezier(0, 0.2, 0.8, 1);
+            pointer-events: none;
+            z-index: 39;
+        }
+
+        /* 火漆印點擊光圈效果 */
+        @keyframes sealBurst {
+            0% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+                box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.8);
+            }
+
+            100% {
+                transform: translateX(-50%) scale(1.5);
+                opacity: 0;
+                box-shadow: 0 0 30px 20px rgba(197, 160, 89, 0);
+            }
+        }
+
+        .seal-burst-effect {
+            position: absolute;
+            bottom: -28px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(197, 160, 89, 0.4) 0%, transparent 70%);
+            animation: sealBurst 0.6s ease-out forwards;
+            pointer-events: none;
+            z-index: 38;
+        }
+
+        @keyframes fadeInOut {
+
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: translateY(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(-5px);
+            }
+        }
+
+        .animate-pulse-text {
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        /* --- 信封結構 (重新設計) --- */
+        .envelope-container {
+            position: relative;
+            width: 340px;
+            height: 230px;
+            cursor: pointer;
+            perspective: 1200px;
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform-style: preserve-3d;
+            /* 手機版 3D 兼容 */
+            -webkit-perspective: 1200px;
+        }
+
+        /* 金色藤蔓裝飾容器 - 沿著信封邊緣並向內延伸 */
+        .envelope-vines {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: calc(100% + 30px);
+            height: calc(100% + 30px);
+            pointer-events: none;
+            z-index: 35;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            overflow: visible;
+        }
+
+        .envelope-vines.fade-out {
+            opacity: 0;
+            transform: scale(1.05);
+        }
+
+        /* 藤蔓 SVG 框架 */
+        .vine-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: drop-shadow(1px 1px 1px rgba(139, 101, 45, 0.4));
+        }
+
+        .vine-frame path {
+            fill: none;
+            stroke: url(#goldGradient);
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .vine-main {
+            stroke-width: 3;
+            opacity: 0.95;
+        }
+
+        .vine-branch {
+            stroke-width: 2.2;
+            opacity: 0.9;
+        }
+
+        .vine-twig {
+            stroke-width: 1.5;
+            opacity: 0.85;
+        }
+
+        .vine-leaf {
+            fill: url(#goldLeafGradient);
+            opacity: 0.9;
+            filter: drop-shadow(0.5px 0.5px 0.5px rgba(139, 101, 45, 0.3));
+        }
+
+        .vine-dot {
+            fill: var(--gold-main);
+            opacity: 0.7;
+        }
+
+        /* 金屬閃爍動畫 */
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                opacity: 0.7;
+                filter: brightness(1);
+            }
+
+            50% {
+                opacity: 1;
+                filter: brightness(1.5) drop-shadow(0 0 3px rgba(212, 175, 55, 0.8));
+            }
+        }
+
+        .vine-dot {
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        .vine-dot:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+
+        .vine-dot:nth-child(even) {
+            animation-delay: 1.5s;
+        }
+
+        /* 藤蔓生長動畫 */
+        @keyframes vineGrow {
+            0% {
+                stroke-dashoffset: 500;
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0.9;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+                opacity: 0.9;
+            }
+        }
+
+        @keyframes leafAppear {
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: 0.8;
+                transform: scale(1);
+            }
+        }
+
+        .vine-animated {
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: vineGrow 2.5s ease-out forwards;
+        }
+
+        .leaf-animated {
+            opacity: 0;
+            transform-origin: center;
+            animation: leafAppear 0.6s ease-out forwards;
+        }
+
+        .vine-delay-1 {
+            animation-delay: 0s;
+        }
+
+        .vine-delay-2 {
+            animation-delay: 0.2s;
+        }
+
+        .vine-delay-3 {
+            animation-delay: 0.4s;
+        }
+
+        .vine-delay-4 {
+            animation-delay: 0.6s;
+        }
+
+        .leaf-delay-1 {
+            animation-delay: 0.6s;
+        }
+
+        .leaf-delay-2 {
+            animation-delay: 0.8s;
+        }
+
+        .leaf-delay-3 {
+            animation-delay: 1.0s;
+        }
+
+        .leaf-delay-4 {
+            animation-delay: 1.2s;
+        }
+
+        .leaf-delay-5 {
+            animation-delay: 1.4s;
+        }
+
+        .leaf-delay-6 {
+            animation-delay: 1.6s;
+        }
+
+        /* 信封主體 - 使用矩形，完全被內摺片蓋住 */
+        .envelope-body {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--envelope-color);
+            border-radius: 0 0 4px 4px;
+            z-index: 5;
+            overflow: hidden;
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .envelope-decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 6;
+            pointer-events: none;
+        }
+
+        /* 左側內摺片 - 使用 clip-path 精確裁切三角形 */
+        .envelope-side-left {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 170px;
+            height: 230px;
+            background: var(--envelope-shadow-color);
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+            z-index: 15;
+            filter: drop-shadow(1px -1px 3px rgba(0, 0, 0, 0.05));
+        }
+
+        /* 右側內摺片 - 鏡像三角形 */
+        .envelope-side-right-flap {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 170px;
+            height: 230px;
+            background: var(--envelope-shadow-color);
+            clip-path: polygon(100% 0, 0 50%, 100% 100%);
+            z-index: 16;
+            filter: drop-shadow(-1px -1px 3px rgba(0, 0, 0, 0.05));
+        }
+
+        /* 底部內摺片 - 底部三角形 */
+        .envelope-side-right {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 340px;
+            height: 125px;
+            background: var(--envelope-shadow-color);
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+            z-index: 20;
+            filter: drop-shadow(0 -2px 4px rgba(0, 0, 0, 0.08));
+        }
+
+        /* 紋理效果 */
+        .envelope-side-left::after,
+        .envelope-side-right-flap::after,
+        .envelope-side-right::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.2'/%3E%3C/svg%3E");
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        .envelope-side-left::after {
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+
+        .envelope-side-right-flap::after {
+            clip-path: polygon(100% 0, 0 50%, 100% 100%);
+        }
+
+        .envelope-side-right::after {
+            clip-path: polygon(0 100%, 50% 0, 100% 100%);
+        }
+
+        /* 頂部信封蓋 */
+        .envelope-flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 30;
+            transform-origin: top;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), z-index 0.1s 0.4s;
+            pointer-events: none;
+        }
+
+        .flap-triangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 340px;
+            height: 130px;
+            background: var(--envelope-color);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.1));
+        }
+
+        .flap-triangle::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.2'/%3E%3C/svg%3E");
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        /* 金色邊框 - 信封蓋的裝飾邊 */
+        .flap-border {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            width: 340px;
+            height: 132px;
+            background: var(--gold-main);
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .wax-seal-container {
+            position: absolute;
+            top: 95px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 76px;
+            height: 76px;
+            z-index: 40;
+            cursor: pointer;
+            animation: seal-pulse-strong 2s ease-in-out infinite;
+            transition: transform 0.3s ease, opacity 0.4s;
+        }
+
+        .wax-seal-container:hover {
+            animation-duration: 1s;
+        }
+
+        .wax-seal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #E6CFA0;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            pointer-events: none;
+            z-index: 42;
+        }
+
+        .letter-card {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            height: 92%;
+            background: #fff;
+            z-index: 5;
+            /* 移除舊 transition, 改由 open loading class 控制 animation */
+            transition: box-shadow 0.5s;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #F0EAE4;
+        }
+
+        .open .envelope-flap {
+            transform: rotateX(180deg);
+            z-index: 1;
+            transition-delay: 0s;
+        }
+
+        .open .wax-seal-container {
+            opacity: 0;
+            pointer-events: none;
+            animation: none;
+        }
+
+        .open .seal-ripple {
+            display: none;
+        }
+
+        .open .letter-card {
+            /* 動作時間 3s, fill mode forwards 停在最後狀態 */
+            animation: extract-letter 3s cubic-bezier(0.5, 0, 0, 1) forwards;
+            background-color: #FAFAFA;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+            z-index: 40;
+        }
+
+        @keyframes extract-letter {
+            0% {
+                transform: translateX(-50%) translateY(0) scale(1);
+                z-index: 5;
+            }
+
+            20% {
+                transform: translateX(-50%) translateY(0) scale(1);
+                /* 等待信封開 */
+                z-index: 5;
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-220px) scale(1);
+                /* 向上抽出 (最高點) */
+                z-index: 40;
+                /* 切換層級 */
+            }
+
+            100% {
+                /* 回到中間 (依變數控制) 並放大 */
+                transform: translateX(-50%) translateY(var(--extract-translate-y)) scale(var(--extract-scale));
+                z-index: 40;
+                box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        /* 兼容 iOS Safari 的 Keyframes */
+        @-webkit-keyframes extract-letter {
+            0% {
+                -webkit-transform: translateX(-50%) translateY(0) scale(1);
+                transform: translateX(-50%) translateY(0) scale(1);
+                z-index: 5;
+            }
+
+            20% {
+                -webkit-transform: translateX(-50%) translateY(0) scale(1);
+                transform: translateX(-50%) translateY(0) scale(1);
+                z-index: 5;
+            }
+
+            50% {
+                -webkit-transform: translateX(-50%) translateY(-220px) scale(1);
+                transform: translateX(-50%) translateY(-220px) scale(1);
+                z-index: 40;
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%) translateY(var(--extract-translate-y)) scale(var(--extract-scale));
+                transform: translateX(-50%) translateY(var(--extract-translate-y)) scale(var(--extract-scale));
+                z-index: 40;
+                box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .open.envelope-container {
+            animation: none;
+            transform: translateY(50px);
+            cursor: default;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-slide-up {
+            opacity: 0;
+            animation: slideInUp 1.0s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        .glass-panel {
+            background: rgba(253, 251, 247, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 20px 40px -5px rgba(176, 125, 98, 0.15);
+        }
+
+        .petal {
+            position: fixed;
+            top: -50px;
+            z-index: 50;
+            pointer-events: none;
+            background-color: #ffd7e6;
+            opacity: 0.8;
+            border-radius: 100% 0% 100% 0%;
+            will-change: transform;
+        }
+
+
+
+        .carousel-slide {
+            transition: opacity 1.2s ease-in-out, transform 1.2s ease-out;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+            z-index: 10;
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+
+<body class="bg-[#FDFBF7] antialiased">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect, useRef, memo, useCallback } = React;
+
+        // --- Static Data & Constants ---
+        const BASE_IMAGE_URL = "https://vo1en.github.io/wedding/";
+        const PHOTOS = ["142.webp", "21.webp", "113.webp", "145.webp", "146.webp", "51.webp", "68.webp", "98.webp", "100.webp", "109.webp", "120.webp"];
+        const CROP_INDICES = [0, 1, 2, 3, 4];
+        const TARGET_DATE = new Date('2026-03-28T12:00:00').getTime();
+
+        // --- Hooks ---
+
+        // 花瓣特效 Hook
+        const usePetals = () => {
+            useEffect(() => {
+                const PETAL_COUNT = 30; // 花瓣數量
+                const petals = [];
+                const container = document.body;
+                let scrollVelocity = 0;
+                let lastScrollY = window.scrollY;
+                let touchStartY = 0;
+
+                // 建立花瓣 DOM 與初始狀態
+                for (let i = 0; i < PETAL_COUNT; i++) {
+                    const el = document.createElement('div');
+                    el.classList.add('petal');
+                    const size = Math.random() * 8 + 10;
+                    el.style.width = `${size}px`;
+                    el.style.height = `${size}px`;
+                    el.style.backgroundColor = Math.random() > 0.7 ? '#EBC8C8' : '#ffd7e6';
+                    el.style.opacity = Math.random() * 0.5 + 0.4;
+                    container.appendChild(el);
+
+                    petals.push({
+                        el,
+                        x: Math.random() * window.innerWidth,
+                        y: Math.random() * window.innerHeight,
+                        size,
+                        speed: Math.random() * 1.0 + 0.3,
+                        rotation: Math.random() * 360,
+                        rotationSpeed: (Math.random() - 0.5) * 1.5,
+                        wobble: Math.random() * Math.PI * 2,
+                        wobbleSpeed: Math.random() * 0.03 + 0.015
+                    });
+                }
+
+                let animationFrameId;
+                let lastTime = 0;
+
+                const animate = (timestamp) => {
+                    if (!lastTime) lastTime = timestamp;
+                    const deltaTime = (timestamp - lastTime) / 16.67;
+                    lastTime = timestamp;
+
+                    const friction = Math.pow(0.92, deltaTime);
+                    scrollVelocity *= friction;
+                    if (Math.abs(scrollVelocity) < 0.1) scrollVelocity = 0;
+
+                    petals.forEach(p => {
+                        const moveY = (p.speed - (scrollVelocity * 0.3)) * deltaTime;
+                        p.y += moveY;
+                        p.wobble += p.wobbleSpeed * deltaTime;
+                        p.x += Math.sin(p.wobble) * 0.5 * deltaTime;
+                        p.rotation += p.rotationSpeed * deltaTime;
+
+                        const height = window.innerHeight + 50;
+                        if (p.y > height) {
+                            p.y = -50;
+                            p.x = Math.random() * window.innerWidth;
+                        } else if (p.y < -50) {
+                            p.y = height;
+                            p.x = Math.random() * window.innerWidth;
+                        }
+
+                        if (p.x > window.innerWidth + 20) p.x = -20;
+                        else if (p.x < -20) p.x = window.innerWidth + 20;
+
+                        p.el.style.transform = `translate3d(${p.x}px, ${p.y}px, 0) rotate(${p.rotation}deg)`;
+                    });
+
+                    animationFrameId = requestAnimationFrame(animate);
+                };
+
+                animationFrameId = requestAnimationFrame(animate);
+
+                const handleWheel = (e) => {
+                    const sensitivity = 0.15;
+                    scrollVelocity += e.deltaY * sensitivity;
+                    if (scrollVelocity > 15) scrollVelocity = 15;
+                    if (scrollVelocity < -15) scrollVelocity = -15;
+                };
+
+                const handleTouchStart = (e) => {
+                    touchStartY = e.touches[0].clientY;
+                };
+
+                const handleTouchMove = (e) => {
+                    const currentY = e.touches[0].clientY;
+                    const deltaY = touchStartY - currentY;
+                    scrollVelocity += deltaY * 0.3;
+                    touchStartY = currentY;
+                    if (scrollVelocity > 15) scrollVelocity = 15;
+                    if (scrollVelocity < -15) scrollVelocity = -15;
+                };
+
+                window.addEventListener('wheel', handleWheel, { passive: true });
+                window.addEventListener('touchstart', handleTouchStart, { passive: true });
+                window.addEventListener('touchmove', handleTouchMove, { passive: true });
+
+                return () => {
+                    cancelAnimationFrame(animationFrameId);
+                    window.removeEventListener('wheel', handleWheel);
+                    window.removeEventListener('touchstart', handleTouchStart);
+                    window.removeEventListener('touchmove', handleTouchMove);
+                    petals.forEach(p => {
+                        if (p.el && p.el.parentNode) p.el.parentNode.removeChild(p.el);
+                    });
+                };
+            }, []);
+        };
+
+        // --- Sub-Components ---
+
+        // Memoized complex SVG component
+        const EnvelopeVines = memo(({ isOpening }) => (
+            <div className={`envelope-vines ${isOpening ? 'fade-out' : ''}`}>
+                <svg className="vine-frame" viewBox="0 0 370 260" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#D4AF37" />
+                            <stop offset="25%" stopColor="#F5D67B" />
+                            <stop offset="50%" stopColor="#C5A059" />
+                            <stop offset="75%" stopColor="#E8C872" />
+                            <stop offset="100%" stopColor="#B8952F" />
+                        </linearGradient>
+                        <linearGradient id="goldLeafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stopColor="#E8C872" />
+                            <stop offset="50%" stopColor="#C5A059" />
+                            <stop offset="100%" stopColor="#D4AF37" />
+                        </linearGradient>
+                    </defs>
+                    <path className="vine-main vine-animated vine-delay-1" d="M10,25 C35,0 55,35 85,5 C115,-10 135,40 165,5 C195,-15 215,40 245,5 C275,-10 305,35 335,5 C355,0 360,25 355,20" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="50" cy="18" rx="9" ry="4.5" transform="rotate(20, 50, 18)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="100" cy="12" rx="8" ry="4" transform="rotate(-25, 100, 12)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="145" cy="20" rx="9" ry="4.5" transform="rotate(30, 145, 20)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="190" cy="12" rx="8" ry="4" transform="rotate(-20, 190, 12)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="235" cy="20" rx="9" ry="4.5" transform="rotate(25, 235, 20)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="280" cy="12" rx="8" ry="4" transform="rotate(-30, 280, 12)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="325" cy="18" rx="9" ry="4.5" transform="rotate(20, 325, 18)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="70" cy="20" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-1" cx="125" cy="10" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="175" cy="22" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-1" cx="215" cy="8" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="260" cy="20" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-1" cx="305" cy="10" r="2.5" />
+                    <path className="vine-main vine-animated vine-delay-3" d="M10,235 C35,260 55,225 85,255 C115,270 135,220 165,255 C195,275 215,220 245,255 C275,270 305,225 335,255 C355,260 360,235 355,240" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="50" cy="242" rx="9" ry="4.5" transform="rotate(-20, 50, 242)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-5" cx="100" cy="248" rx="8" ry="4" transform="rotate(25, 100, 248)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="145" cy="240" rx="9" ry="4.5" transform="rotate(-30, 145, 240)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-5" cx="190" cy="248" rx="8" ry="4" transform="rotate(20, 190, 248)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="235" cy="240" rx="9" ry="4.5" transform="rotate(-25, 235, 240)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-5" cx="280" cy="248" rx="8" ry="4" transform="rotate(30, 280, 248)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="325" cy="242" rx="9" ry="4.5" transform="rotate(-20, 325, 242)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-5" cx="70" cy="240" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-4" cx="125" cy="250" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-5" cx="175" cy="238" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-4" cx="215" cy="252" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-5" cx="260" cy="240" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-4" cx="305" cy="250" r="2.5" />
+                    <path className="vine-main vine-animated vine-delay-2" d="M25,10 C0,35 35,55 5,85 C-10,115 40,135 5,165 C-15,195 40,215 5,245 C0,255 25,260 20,255" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="18" cy="50" rx="8" ry="4" transform="rotate(70, 18, 50)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="12" cy="100" rx="7" ry="3.5" transform="rotate(-60, 12, 100)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="20" cy="145" rx="8" ry="4" transform="rotate(65, 20, 145)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="12" cy="190" rx="7" ry="3.5" transform="rotate(-70, 12, 190)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="18" cy="230" rx="8" ry="4" transform="rotate(60, 18, 230)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-3" cx="20" cy="72" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="10" cy="125" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-3" cx="22" cy="170" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="10" cy="210" r="3" />
+                    <path className="vine-main vine-animated vine-delay-2" d="M345,10 C370,35 335,55 365,85 C380,115 330,135 365,165 C385,195 330,215 365,245 C370,255 345,260 350,255" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="352" cy="50" rx="8" ry="4" transform="rotate(-70, 352, 50)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="358" cy="100" rx="7" ry="3.5" transform="rotate(60, 358, 100)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="350" cy="145" rx="8" ry="4" transform="rotate(-65, 350, 145)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="358" cy="190" rx="7" ry="3.5" transform="rotate(70, 358, 190)" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-2" cx="352" cy="230" rx="8" ry="4" transform="rotate(-60, 352, 230)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-3" cx="350" cy="72" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="360" cy="125" r="3" />
+                    <circle className="vine-dot leaf-animated leaf-delay-3" cx="348" cy="170" r="2.5" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="360" cy="210" r="3" />
+                    <path className="vine-branch vine-animated vine-delay-1" d="M15,15 C30,20 25,35 40,40" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="38" cy="38" rx="7" ry="3.5" transform="rotate(45, 38, 38)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="28" cy="28" r="3.5" />
+                    <path className="vine-branch vine-animated vine-delay-1" d="M355,15 C340,20 345,35 330,40" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-1" cx="332" cy="38" rx="7" ry="3.5" transform="rotate(-45, 332, 38)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-2" cx="342" cy="28" r="3.5" />
+                    <path className="vine-branch vine-animated vine-delay-3" d="M15,245 C30,240 25,225 40,220" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="38" cy="222" rx="7" ry="3.5" transform="rotate(-45, 38, 222)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-5" cx="28" cy="232" r="3.5" />
+                    <path className="vine-branch vine-animated vine-delay-3" d="M355,245 C340,240 345,225 330,220" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-4" cx="332" cy="222" rx="7" ry="3.5" transform="rotate(45, 332, 222)" />
+                    <circle className="vine-dot leaf-animated leaf-delay-5" cx="342" cy="232" r="3.5" />
+                    <path className="vine-twig vine-animated vine-delay-2" d="M60,22 C70,35 80,45 95,50" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="93" cy="48" rx="5" ry="2.5" transform="rotate(35, 93, 48)" />
+                    <path className="vine-twig vine-animated vine-delay-2" d="M310,22 C300,35 290,45 275,50" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="277" cy="48" rx="5" ry="2.5" transform="rotate(-35, 277, 48)" />
+                    <path className="vine-twig vine-animated vine-delay-4" d="M60,238 C70,225 80,215 95,210" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-5" cx="93" cy="212" rx="5" ry="2.5" transform="rotate(-35, 93, 212)" />
+                    <path className="vine-twig vine-animated vine-delay-4" d="M310,238 C300,225 290,215 275,210" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-5" cx="277" cy="212" rx="5" ry="2.5" transform="rotate(35, 277, 212)" />
+                    <path className="vine-twig vine-animated vine-delay-2" d="M22,80 C35,90 45,95 55,100" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="53" cy="98" rx="5" ry="2.5" transform="rotate(25, 53, 98)" />
+                    <path className="vine-twig vine-animated vine-delay-2" d="M348,80 C335,90 325,95 315,100" />
+                    <ellipse className="vine-leaf leaf-animated leaf-delay-3" cx="317" cy="98" rx="5" ry="2.5" transform="rotate(-25, 317, 98)" />
+                </svg>
+            </div>
+        ));
+
+        const WaxSeal = memo(({ onOpen }) => (
+            <>
+                <div className="seal-ripple"></div>
+                <div className="wax-seal-container" onClick={onOpen} onTouchEnd={(e) => { e.preventDefault(); onOpen(e); }}>
+                    <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="redSealGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stopColor="#9e2b2b" />
+                                <stop offset="30%" stopColor="#7a1f1f" />
+                                <stop offset="70%" stopColor="#4a0e0e" />
+                                <stop offset="100%" stopColor="#7a1f1f" />
+                            </linearGradient>
+                            <linearGradient id="redSealInner" x1="100%" y1="100%" x2="0%" y2="0%">
+                                <stop offset="0%" stopColor="#9e2b2b" />
+                                <stop offset="50%" stopColor="#4a0e0e" />
+                                <stop offset="100%" stopColor="#7a1f1f" />
+                            </linearGradient>
+                            <filter id="softShadowRed">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+                                <feOffset in="blur" dx="0" dy="2" result="offsetBlur" />
+                                <feFlood floodColor="rgba(74, 14, 14, 0.5)" result="colorBlur" />
+                                <feComposite in="colorBlur" in2="offsetBlur" operator="in" result="shadow" />
+                                <feComposite in="SourceGraphic" in2="shadow" operator="over" />
+                            </filter>
+                        </defs>
+                        <circle cx="50" cy="50" r="46" fill="url(#redSealGradient)" filter="url(#softShadowRed)" stroke="#4a0e0e" strokeWidth="1" />
+                        <circle cx="50" cy="50" r="36" fill="none" stroke="url(#redSealInner)" strokeWidth="2" opacity="0.7" />
+                        <circle cx="50" cy="50" r="30" fill="url(#redSealInner)" opacity="0.1" />
+                    </svg>
+                    <div className="wax-seal-content font-main">W</div>
+                </div>
+            </>
+        ));
+
+        const CountdownTimer = React.memo(({ targetDate }) => {
+            const [timeLeft, setTimeLeft] = useState(() => {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+                if (distance < 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+                return {
+                    days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                    hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                    minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                    seconds: Math.floor((distance % (1000 * 60)) / 1000)
+                };
+            });
+
+            useEffect(() => {
+                const interval = setInterval(() => {
+                    const now = new Date().getTime();
+                    const distance = targetDate - now;
+                    if (distance < 0) {
+                        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+                    } else {
+                        setTimeLeft({
+                            days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+                            hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+                            minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+                            seconds: Math.floor((distance % (1000 * 60)) / 1000)
+                        });
+                    }
+                }, 1000);
+                return () => clearInterval(interval);
+            }, [targetDate]);
+
+            return (
+                <div className="flex justify-center gap-3 mt-5 mb-4">
+                    {[
+                        { v: timeLeft.days, l: '天' }, { v: timeLeft.hours, l: '時' },
+                        { v: timeLeft.minutes, l: '分' }, { v: timeLeft.seconds, l: '秒' }
+                    ].map((item, i) => (
+                        <div key={i} className="text-center w-14 bg-gradient-to-b from-[#FFFEF8] to-[#F5F2EE] rounded-lg py-2 border border-[#C5A059]/30 shadow-sm">
+                            <span className="block font-main text-2xl font-bold text-[#8A6E36]">{item.v}</span>
+                            <span className="text-[10px] text-[#999] font-medium">{item.l}</span>
+                        </div>
+                    ))}
+                </div>
+            );
+        });
+
+        const PhotoCarousel = memo(({ autoRotate }) => {
+            const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+
+            useEffect(() => {
+                if (!autoRotate) return;
+                const interval = setInterval(() => setCurrentPhotoIndex(p => (p + 1) % PHOTOS.length), 5000);
+                return () => clearInterval(interval);
+            }, [autoRotate]);
+
+            const nextPhoto = useCallback(() => setCurrentPhotoIndex(p => (p + 1) % PHOTOS.length), []);
+            const prevPhoto = useCallback(() => setCurrentPhotoIndex(p => (p - 1 + PHOTOS.length) % PHOTOS.length), []);
+
+            return (
+                <div className="relative px-6 pb-4 animate-slide-up delay-100">
+                    <div className="relative z-10 bg-white p-2 rounded shadow-xl shadow-[#B07D62]/10 aspect-[4/5]">
+                        <div className="relative w-full h-full overflow-hidden bg-[#F5F5F5]">
+                            {PHOTOS.map((photo, index) => {
+                                const isCover = CROP_INDICES.includes(index);
+                                const isActive = index === currentPhotoIndex;
+                                return (
+                                    <div key={photo} className={`carousel-slide ${isActive ? 'active' : ''}`}>
+                                        <div className="absolute inset-0 overflow-hidden bg-gradient-to-br from-[#F5F0E8] to-[#E8E0D5]">
+                                            <img src={BASE_IMAGE_URL + photo} alt="婚紗照片背景" className="w-full h-full object-cover blur-xl opacity-30" loading="lazy" />
+                                        </div>
+                                        <img src={BASE_IMAGE_URL + photo} alt={`黃裕勝與馬璦嵐婚紗照 ${index + 1}`} className={`relative z-10 w-full h-full ${isCover ? 'object-cover' : 'object-contain'}`} loading="lazy" />
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                    <div className="flex justify-center items-center mt-6 gap-6">
+                        <button onClick={prevPhoto} aria-label="上一張照片" className="text-[#B07D62] opacity-60 hover:opacity-100 active:scale-90 p-3 text-xl transition-all"><i className="fa-solid fa-chevron-left"></i></button>
+                        <div className="font-cinzel text-xs text-[#999] tracking-widest">{currentPhotoIndex + 1} / {PHOTOS.length}</div>
+                        <button onClick={nextPhoto} aria-label="下一張照片" className="text-[#B07D62] opacity-60 hover:opacity-100 active:scale-90 p-3 text-xl transition-all"><i className="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            );
+        });
+
+        // --- Main Component ---
+        const WeddingInvite = () => {
+            const [isOpening, setIsOpening] = useState(false);
+            const [hasEntered, setHasEntered] = useState(false);
+            const [isPlaying, setIsPlaying] = useState(false);
+            const [showScrollHint, setShowScrollHint] = useState(true);
+            const audioRef = useRef(null);
+
+            usePetals();
+
+            useEffect(() => {
+                const handleVisibilityChange = () => {
+                    const audio = audioRef.current;
+                    if (!audio) return;
+
+                    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+                    if (document.hidden) {
+                        // 手機版：切換分頁時暫停；電腦版：繼續播放
+                        if (isMobile && isPlaying) {
+                            audio.pause();
+                        }
+                    } else {
+                        // 手機版：切回來時恢復播放
+                        if (isMobile && isPlaying && audio.paused) {
+                            audio.play().catch(e => console.log("Resume play failed", e));
+                        }
+                    }
+                };
+                document.addEventListener('visibilitychange', handleVisibilityChange);
+                return () => document.removeEventListener('visibilitychange', handleVisibilityChange);
+            }, [isPlaying]);
+
+            useEffect(() => {
+                const handleScroll = () => {
+                    setShowScrollHint(window.scrollY <= 100);
+                };
+                window.addEventListener('scroll', handleScroll, { passive: true });
+                return () => window.removeEventListener('scroll', handleScroll);
+            }, []);
+
+            const openEnvelope = useCallback((e) => {
+                e.stopPropagation();
+                if (isOpening) return;
+                const audio = audioRef.current;
+                if (audio) {
+                    // iOS Safari 需要在用戶交互中直接調用 play()
+                    // 不能在播放前設定 volume = 0，否則 iOS 可能認為沒有真正播放
+                    audio.volume = 0.05; // 從極小音量開始（不是 0）
+                    const playPromise = audio.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // 播放成功後才設定狀態
+                            setIsPlaying(true);
+                            // 淡入效果
+                            let vol = 0.05;
+                            const fadeIn = setInterval(() => {
+                                vol = Math.min(vol + 0.05, 1);
+                                audio.volume = vol;
+                                if (vol >= 1) clearInterval(fadeIn);
+                            }, 100);
+                        }).catch(err => {
+                            console.log("Play failed:", err);
+                            // iOS 可能需要額外的用戶交互，不設定 isPlaying
+                        });
+                    }
+                }
+                setIsOpening(true);
+                setTimeout(() => {
+                    setHasEntered(true);
+                    window.scrollTo({ top: 0, behavior: 'auto' });
+                }, 4000);
+            }, [isOpening]);
+
+            const toggleMusic = useCallback(() => {
+                const audio = audioRef.current;
+                if (isPlaying) audio.pause();
+                else audio.play().catch(e => console.log(e));
+                setIsPlaying(!isPlaying);
+            }, [isPlaying]);
+
+            const openMap = () => window.open("https://www.google.com/maps/search/?api=1&query=北投麗禧溫泉酒店&query_place_id=ChIJ4f8v-2upQjQR_4f8v-2upQjQR", "_blank");
+
+            const addToCalendar = useCallback(() => {
+                const isApple = /iPhone|iPad|iPod|Mac/i.test(navigator.userAgent) && !/Chrome/i.test(navigator.userAgent);
+                if (isApple) {
+                    const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Wedding Invite//EN
+BEGIN:VEVENT
+UID:wedding-20260328@invite
+DTSTAMP:20241229T000000Z
+DTSTART:20260328T040000Z
+DTEND:20260328T070000Z
+SUMMARY:黃裕勝 & 馬璦嵐 家宴
+DESCRIPTION:誠摯邀請您參與我們的家宴，中午12:00準時開席
+LOCATION:北投麗禧溫泉酒店 - 台北市北投區幽雅路30號
+END:VEVENT
+END:VCALENDAR`;
+                    const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = '家宴邀請.ics';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(link.href);
+                } else {
+                    window.open("https://www.google.com/calendar/render?action=TEMPLATE&text=黃裕勝%26馬璦嵐家宴&dates=20260328T040000Z/20260328T070000Z&details=誠摯邀請您參與&location=北投麗禧溫泉酒店", "_blank");
+                }
+            }, []);
+
+            return (
+                <div className={`min-h-screen flex justify-center py-0 md:py-12 bg-[#FDFBF7] bg-texture font-serif-tc relative ${!hasEntered ? 'h-screen overflow-hidden' : ''}`}>
+                    <audio ref={audioRef} src="https://vo1en.github.io/wedding/bgm.mp3" loop preload="auto" />
+
+                    {/* --- 開場信封層 --- */}
+                    <div className={`fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#FDFBF7] bg-texture transition-all duration-1000
+                        ${hasEntered ? 'opacity-0 pointer-events-none scale-110' : 'opacity-100'}`}>
+
+                        <div className={`envelope-container ${isOpening ? 'open' : 'animate-float'}`} onClick={openEnvelope} onTouchEnd={(e) => { e.preventDefault(); openEnvelope(e); }}>
+                            <div className="envelope-body">
+                                <div className="paper-texture-overlay"></div>
+                                <div className="envelope-decorations"></div>
+                            </div>
+                            <div className="envelope-side-left"></div>
+                            <div className="envelope-side-right-flap"></div>
+                            <div className="envelope-side-right"></div>
+                            <div className="envelope-flap">
+                                <div className="flap-triangle"></div>
+                                <div className="flap-border"></div>
+                            </div>
+
+                            <EnvelopeVines isOpening={isOpening} />
+                            <WaxSeal onOpen={openEnvelope} />
+
+                            <div className="letter-card">
+                                <div className="border border-[#E0D6CC] w-full h-full flex flex-col items-center justify-center p-2 outline outline-1 outline-offset-4 outline-[#F0EAE4]">
+                                    <p className="font-cinzel text-xs tracking-[0.2em] text-[#B07D62] mb-2">Save the Date</p>
+                                    <p className="font-serif-tc text-xl text-[#333] font-bold mb-1">黃裕勝 & 馬璦嵐</p>
+                                    <div className="w-8 h-[1px] bg-[#C5A059] my-2"></div>
+                                    <p className="font-main text-sm text-[#888]">2026.03.28</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={`mt-20 text-center animate-pulse-text transition-opacity duration-500 ${isOpening ? 'opacity-0' : 'opacity-100'}`}>
+                            <div className="text-[#C5A059] text-lg mb-2"><i className="fa-solid fa-arrow-up"></i></div>
+                            <p className="font-cinzel text-xs tracking-[0.3em] text-[#8A6E36] mb-1">CLICK TO OPEN</p>
+                            <p className="font-serif-tc text-sm tracking-widest text-[#666]">點擊火漆印開啟</p>
+                        </div>
+                    </div>
+
+                    <button onClick={toggleMusic}
+                        aria-label={isPlaying ? "暫停背景音樂" : "播放背景音樂"}
+                        className={`fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-700 border border-[#C5A059]/30
+                        ${isPlaying ? 'bg-[#B07D62] text-white animate-spin-slow' : 'bg-white/90 backdrop-blur-sm text-[#B07D62]'}
+                        ${!hasEntered ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}`}>
+                        {isPlaying ? <i className="fa-solid fa-music text-sm"></i> : <i className="fa-solid fa-volume-xmark text-sm"></i>}
+                    </button>
+
+                    <div className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[55] flex flex-col items-center pointer-events-none transition-all duration-700 ${!hasEntered ? 'opacity-0 translate-y-10' : (showScrollHint ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10')}`}>
+                        <div className="text-[#B07D62] text-xl animate-bounce mb-1">
+                            <i className="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <span className="font-serif-tc text-[#8A6E36] text-xs tracking-widest bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full shadow-sm border border-[#C5A059]/20">往下滑動</span>
+                    </div>
+
+                    <div className={`w-full max-w-[480px] glass-panel relative min-h-screen md:min-h-[90vh] md:rounded-2xl overflow-hidden flex flex-col z-10 transition-all duration-1000 ease-out ${!hasEntered ? 'translate-y-[100px] opacity-0' : 'translate-y-0 opacity-100'}`}>
+
+                        <div className="flex justify-between items-center px-12 py-8 opacity-60">
+                            <span className="font-cinzel text-[10px] tracking-[0.2em] text-[#B07D62]">FAMILY BANQUET</span>
+                            <span className="font-cinzel text-[10px] tracking-[0.2em] text-[#B07D62]">2026</span>
+                        </div>
+
+                        <div className="px-6 mb-8 animate-slide-up flex flex-col items-center text-center">
+                            <p className="font-hand text-4xl md:text-5xl text-[#C5A059] leading-relaxed tracking-wide">We are getting married !!</p>
+                        </div>
+
+                        <PhotoCarousel autoRotate={hasEntered} />
+
+                        <div className="px-8 mt-4 mb-8 animate-slide-up delay-200 text-center">
+                            <div className="inline-block border-y border-[#C5A059]/30 py-4 px-8">
+                                <p className="text-3xl font-serif-tc font-bold text-[#4A4A4A] mb-2 flex items-center justify-center gap-3">
+                                    黃裕勝
+                                    <span className="text-lg text-[#C5A059] animate-heartbeat">
+                                        <i className="fa-regular fa-heart"></i>
+                                    </span>
+                                    馬璦嵐
+                                </p>
+                                <div className="flex justify-center gap-4 text-xs font-cinzel text-[#B07D62] tracking-widest">
+                                    <span>VOLEN</span><span>•</span><span>ANNA</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="px-10 pb-8 text-center animate-slide-up delay-300">
+                            <div className="font-serif-tc text-[#666] text-[15px] leading-8 tracking-wide">
+                                <p>因愛相遇，因緣相守</p>
+                                <p>此生相伴，共赴未來</p>
+                                <p className="mt-4 text-[#B07D62]">我們結婚了 !</p>
+                                <p>誠摯邀請您見證這份幸福</p>
+                            </div>
+                        </div>
+
+                        <div className="px-5 mb-12 animate-slide-up delay-500">
+                            <div className="bg-white/70 backdrop-blur-xl p-8 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-white">
+                                <div className="space-y-8 text-center">
+                                    <div>
+                                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#F5F2EE] text-[#B07D62] mb-3"><i className="fa-regular fa-calendar"></i></div>
+                                        <p className="text-xl font-bold text-[#333] font-serif-tc">2026.03.28 (六)</p>
+                                        <p className="text-sm text-[#777] mt-1">中午 12:00 準時開席</p>
+
+                                        <CountdownTimer targetDate={TARGET_DATE} />
+
+                                        <div className="mt-2">
+                                            <button onClick={addToCalendar} className="text-xs border border-[#C5A059] text-[#C5A059] px-4 py-1.5 rounded hover:bg-[#C5A059] hover:text-white active:scale-95 transition-all inline-flex items-center gap-1.5">
+                                                <i className="fa-regular fa-calendar-plus"></i> 加入行事曆
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className="w-12 h-[1px] bg-[#B07D62]/20 mx-auto"></div>
+                                    <div>
+                                        <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#F5F2EE] text-[#B07D62] mb-3"><i className="fa-solid fa-location-dot"></i></div>
+                                        <p className="text-xl font-bold text-[#333] font-serif-tc mb-1">北投麗禧溫泉酒店</p>
+                                        <p className="text-sm text-[#777] mb-4">台北市北投區幽雅路30號</p>
+                                        <div className="flex justify-center">
+                                            <button onClick={openMap} className="py-2 px-6 bg-[#B07D62] text-white text-xs tracking-wider rounded shadow hover:bg-[#9A6D55] active:scale-95 transition-all">地圖導航</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* 停車指南區塊 */}
+                        <div className="px-5 mb-12 animate-slide-up delay-500">
+                            <div className="bg-white/70 backdrop-blur-xl p-6 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-white">
+                                <div className="text-center mb-4">
+                                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#F5F2EE] text-[#B07D62] mb-3"><i className="fa-solid fa-square-parking"></i></div>
+                                    <p className="text-xl font-bold text-[#333] font-serif-tc">停車指南</p>
+                                </div>
+                                <div className="rounded-lg overflow-hidden mb-4 shadow-md">
+                                    <img src={BASE_IMAGE_URL + "parking.webp"} alt="北投麗禧溫泉酒店停車場入口指南" className="w-full h-auto" loading="lazy" />
+                                </div>
+                                <div className="text-center font-serif-tc text-[#666] text-sm leading-7">
+                                    <p className="font-medium flex items-center justify-center gap-2"><i className="fa-solid fa-circle-info text-[#B07D62]"></i>入口位於飯店後方</p>
+                                    <p className="text-[#999] text-xs mt-1">B4、B5 樓層提供平面停車位</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="pb-16 text-center animate-slide-up delay-500 opacity-60">
+                            <p className="font-hand text-5xl text-[#C5A059]">Thank you</p>
+                        </div>
+                    </div>
+                </div >
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<WeddingInvite />);
+    </script>
+
+</body>
+
+</html>
